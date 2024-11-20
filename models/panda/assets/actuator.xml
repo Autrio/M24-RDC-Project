@@ -1,0 +1,13 @@
+<mujocoinclude>
+    <actuator>
+        <motor class="panda" name="panda_joint1" joint="panda_joint1"  forcerange="-870 870" ctrlrange="-1000 1000"/>
+        <motor class="panda" name="panda_joint2" joint="panda_joint2"  forcerange="-870 870" ctrlrange="-1000 1000"/>
+        <motor class="panda" name="panda_joint3" joint="panda_joint3"  forcerange="-870 870"   ctrlrange="-1000 1000"/>
+        <motor class="panda" name="panda_joint4" joint="panda_joint4"  forcerange="-870 870"   ctrlrange="-1000 1000"/>
+        <motor class="panda" name="panda_joint5" joint="panda_joint5"  forcerange="-120 120"   ctrlrange="-1000 1000"/>
+        <motor class="panda" name="panda_joint6" joint="panda_joint6"  forcerange="-120 120"   ctrlrange="-1000 1000"/>
+        <motor class="panda" name="panda_joint7" joint="panda_joint7"  forcerange="-120 120"   ctrlrange="-1000 1000"/>
+    </actuator>
+</mujocoinclude>
+
+<!-- ! the force ranges are not accurate, they have been inflated by 10 to match speed for ball catching -->

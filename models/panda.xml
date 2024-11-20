@@ -1,0 +1,29 @@
+<mujoco model="panda v01">
+
+    <include file="panda/assets/assets.xml" />
+    <include file="panda/assets/gripper_assets.xml" />
+    <include file='panda/assets/actuator.xml' />
+    <include file='panda/assets/gripper_actuator.xml' />
+
+
+    <compiler meshdir="" />
+    <option noslip_iterations="20"> </option>
+s    <option cone="elliptic"> </option>
+    <option><flag multiccd="enable"/> </option>
+
+    <default>
+        <default class='torso'>
+            <geom group='2' contype='0' conaffinity='0' rgba=".95 .99 .92 1" />
+        </default>/ </default>
+
+    <worldbody>
+        <body name='leftarm' pos='0 0 0' euler='0 0 3.14'>
+            <include file="panda/assets/chain.xml" />
+        </body>
+    </worldbody>
+
+    <include file="panda/assets/basic_scene.xml" /> 
+    <!-- ! NOTE this has to be placed after main world body -->
+
+</mujoco>
+    
